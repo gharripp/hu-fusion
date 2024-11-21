@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HU FUSION on My New Hugo Site</title><link>https://example.org/</link><description>Recent content in HU FUSION on My New Hugo Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>STAR_Lite</title><link>https://example.org/projects/star-lite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/projects/star-lite/</guid><description>&lt;p>STAR_Lite (Stellarator for Training and Research) is our flagship project focused on developing compact stellarator technology for fusion research and education.&lt;/p>
+&lt;h3 id="project-goals">Project Goals&lt;/h3>
+&lt;ul>
+&lt;li>Training next-generation fusion scientists&lt;/li>
+&lt;li>Advancing stellarator design&lt;/li>
+&lt;li>Studying plasma confinement&lt;/li>
+&lt;/ul>
+&lt;h3 id="current-status">Current Status&lt;/h3>
+&lt;p>[Add your current research status and achievements]&lt;/p>
+&lt;h3 id="technical-specifications">Technical Specifications&lt;/h3>
+&lt;p>[Add technical details about STAR_Lite]&lt;/p></description></item><item><title>HU Gets RENEW grant</title><link>https://example.org/news/first-post/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://example.org/news/first-post/</guid><description>&lt;p>Great news everybody. Funding for workfoce development is coming in.&lt;/p></description></item><item><title/><link>https://example.org/projects/cfrt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/projects/cfrt/</guid><description/></item><item><title/><link>https://example.org/projects/divertor-theory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/projects/divertor-theory/</guid><description/></item><item><title/><link>https://example.org/projects/star-little/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/projects/star-little/</guid><description/></item></channel></rss>
