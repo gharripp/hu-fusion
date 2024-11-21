@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sauce+One:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
     <style>
-        :root {
+              :root {
             --hu-blue: #0060a9;
-            --bg-dark: #161617;
+            --bg-dark: #151516;   
             --text-light: #d9d9d9;
         }
         
         body {
-            background-color: #161617;   
+            background-color: var(--bg-dark);
             margin: 0;
             padding: 0;
         }
         
-         
+        .hu-blue-bg {
+            background-color: var(--hu-blue);
+        }
+        
+        .nav-link {
+            font-family: 'Open Sauce One', sans-serif;
+            color: var(--text-light);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .star-lite-title {
+            font-family: Arial, sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            color: var(--hu-blue);
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-family: 'Open Sauce One', sans-serif;
+            color: var(--text-light);
+        }
+
+        .discover-btn {
+            font-family: 'Open Sauce One', sans-serif;
+            border: 2px solid var(--hu-blue);
+            padding: 12px 40px;
+            color: var(--hu-blue);
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .discover-btn:hover {
+            background-color: var(--hu-blue);
+            color: var(--text-light);
+        }
 
          
         .dropdown {
@@ -53,59 +99,157 @@
             color: var(--text-light);
             font-family: 'Open Sauce One', sans-serif;
         }
+
+        .nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background-color: #151516;
+        }
+    
+        .hero-section {
+        min-height: calc(100vh - 136px);
+        position: relative;
+        background-color: #151516;
+        }
+    
+         .hero-content {
+        padding-top: 2rem;
+        position: relative;
+        z-index: 10;
+        }        
     </style>
 </head>
     <body class="bg-gray-900 text-white">
-        <nav class="hu-blue-bg w-full z-50">
-    <div class="flex h-14">
-        <div class="flex space-x-12 px-8">
-            <div class="dropdown">
-                <a href="/fusion" class="nav-link">FUSION</a>
-                <div class="dropdown-content">
-                    <a href="/fusion/overview">Overview</a>
-                    <a href="/fusion/research">Research Areas</a>
-                    <a href="/fusion/facilities">Facilities</a>
+        <div class="w-full bg-[#151516] h-6"></div>
+        
+<div class="nav-container">
+    
+    <div class="bg-[#151516] h-6 w-full"></div>
+    
+    
+    <nav class="hu-blue-bg w-full z-50">
+        <div class="flex h-16">
+            <div class="flex space-x-12 px-8 items-center">
+                <div class="dropdown">
+                    <a href="/fusion" class="nav-link">FUSION</a>
+                    <div class="dropdown-content">
+                        <a href="/fusion/overview">Overview</a>
+                        <a href="/fusion/research">Research Areas</a>
+                        <a href="/fusion/facilities">Facilities</a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="dropdown">
-                <a href="/projects" class="nav-link">PROJECTS</a>
-                <div class="dropdown-content">
-                    <a href="/projects/star-lite">STAR_Lite</a>
-                    <a href="/projects/star-little">STAR_Little</a>
-                    <a href="/projects/cfrt">CFRT</a>
-                    <a href="/projects/divertor">Divertor Theory</a>
+                
+                <div class="dropdown">
+                    <a href="/projects" class="nav-link">PROJECTS</a>
+                    <div class="dropdown-content">
+                        <a href="/projects/star-lite">STAR_Lite</a>
+                        <a href="/projects/star-little">STAR_Little</a>
+                        <a href="/projects/cfrt">CFRT</a>
+                        <a href="/projects/divertor">Divertor Theory</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <a href="/people" class="nav-link">PEOPLE</a>
-                <div class="dropdown-content">
-                    <a href="/people/faculty">Faculty</a>
-                    <a href="/people/students">Students</a>
-                    <a href="/people/staff">Staff</a>
+                <div class="dropdown">
+                    <a href="/people" class="nav-link">PEOPLE</a>
+                    <div class="dropdown-content">
+                        <a href="/people/faculty">Faculty</a>
+                        <a href="/people/students">Students</a>
+                        <a href="/people/staff">Staff</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <a href="/news" class="nav-link">NEWS</a>
-                <div class="dropdown-content">
-                    <a href="/news/latest">Latest</a>
-                    <a href="/news/archive">Archive</a>
+                <div class="dropdown">
+                    <a href="/news" class="nav-link">NEWS</a>
+                    <div class="dropdown-content">
+                        <a href="/news/latest">Latest</a>
+                        <a href="/news/archive">Archive</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <a href="/research" class="nav-link">RESEARCH</a>
-                <div class="dropdown-content">
-                    <a href="/research/publications">Publications</a>
-                    <a href="/research/collaborations">Collaborations</a>
-                    <a href="/research/facilities">Facilities</a>
+                <div class="dropdown">
+                    <a href="/research" class="nav-link">RESEARCH</a>
+                    <div class="dropdown-content">
+                        <a href="/research/publications">Publications</a>
+                        <a href="/research/collaborations">Collaborations</a>
+                        <a href="/research/facilities">Facilities</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
+    
+    <div class="bg-[#151516] h-12 w-full"></div>
+</div>
+
+<style>
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background-color: #151516;
+    }
+    
+    .top-strip {
+        background-color: #151516;
+        min-height: 24px;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hu-blue-bg {
+        background-color: var(--hu-blue);
+    }
+    
+    .nav-link {
+        font-family: 'Open Sauce One', sans-serif;
+        color: var(--text-light);
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #151516;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content a {
+        color: var(--text-light);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Open Sauce One', sans-serif;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+</style>
         <main>
             
     <div class="container mx-auto px-6 py-20">
