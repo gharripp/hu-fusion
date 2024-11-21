@@ -1,0 +1,19 @@
+<footer class="hu-blue py-10">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact</h4>
+                <p>Hampton University</p>
+                <p>Department of Physics</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}" class="hover:text-blue-300">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

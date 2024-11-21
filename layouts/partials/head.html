@@ -1,0 +1,122 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sauce+One:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+              :root {
+            --hu-blue: #0060a9;
+            --bg-dark: #151516;  /* Even darker background */
+            --text-light: #d9d9d9;
+        }
+        
+        body {
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hu-blue-bg {
+            background-color: var(--hu-blue);
+        }
+        
+        .nav-link {
+            font-family: 'Open Sauce One', sans-serif;
+            color: var(--text-light);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .star-lite-title {
+            font-family: Arial, sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            color: var(--hu-blue);
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-family: 'Open Sauce One', sans-serif;
+            color: var(--text-light);
+        }
+
+        .discover-btn {
+            font-family: 'Open Sauce One', sans-serif;
+            border: 2px solid var(--hu-blue);
+            padding: 12px 40px;
+            color: var(--hu-blue);
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .discover-btn:hover {
+            background-color: var(--hu-blue);
+            color: var(--text-light);
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--bg-dark);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: var(--text-light);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: 'Open Sauce One', sans-serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* Content text styles */
+        .content-text {
+            color: var(--text-light);
+            font-family: 'Open Sauce One', sans-serif;
+        }
+
+        .nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background-color: #151516;
+        }
+    
+        .hero-section {
+        min-height: calc(100vh - 136px);
+        position: relative;
+        background-color: #151516;
+        }
+    
+         .hero-content {
+        padding-top: 2rem;
+        position: relative;
+        z-index: 10;
+        }        
+    </style>
+</head>

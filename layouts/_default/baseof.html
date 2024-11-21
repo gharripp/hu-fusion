@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head" . }}
+    <body class="bg-gray-900 text-white">
+        {{ partial "top-strip.html" . }}
+        {{ partial "nav" . }}
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer" . }}
+    </body>
+</html>
